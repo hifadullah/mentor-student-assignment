@@ -1,14 +1,13 @@
 {
   "name": "mentor-student-assignment",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mentor-student assignment system",
   "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev":"nodemon index.js",
-    "start": "node index.js"
+"scripts": {
     "build": "react-scripts build"
-  },
+  "start": "node index.js"
+
+}
   "keywords": [],
   "author": "",
   "license": "ISC",
