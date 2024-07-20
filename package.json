@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Mentor-student assignment system",
   "main": "index.js",
+  "type": "module"
   "scripts": {
     "start": "node index.js",
     "build": "npm run build"
