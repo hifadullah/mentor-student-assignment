@@ -4,8 +4,8 @@
   "description": "Mentor-student assignment system",
   "main": "index.js",
 "scripts": {
+     "start": "node index.js",
     "build": "react-scripts build"
-  "start": "node index.js"
 
 }
   "keywords": [],
