@@ -2,14 +2,13 @@
   "name": "mentor-student-assignment",
   "version": "1.0.0",
   "description": "Mentor-student assignment system",
-  "main": "src/index.js",
+  "main": "index.js",
   "type": "module",
-"scripts": {
-  "start": "node src/index.js",
-  "build": "your build command",
-  "test": "your test command"
-},
-
+  "scripts": {
+    "start": "node index.js",
+    "build": "your build command",
+    "test": "your test command"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
