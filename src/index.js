@@ -2,14 +2,19 @@ import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import AppRouter from './src/routes/index.js'
+
 dotenv.config()
 
-const PORT = process.env.PORT
-const app = express()
+//middle ware
+app.use(express.json());
+app.use(cors());
+app.use('/api',studentMentorRouter)
+connectDB();
+//routes
+app.get("/", (req, res) => {
+  res.status(200).send("API running Successfully");
+});
 
-app.use(cors())
-app.use(express.json())
-app.use(AppRouter)
-
-
-app.listen(PORT,()=>console.log(`App listening port ${PORT}`))
+app.listen(process.env.PORT, () => {
+  console.log("App is running");
+});
